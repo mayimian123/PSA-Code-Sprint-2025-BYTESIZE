@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { ComponentType } from "react";
 import {
   MotionValue,
   motion,
@@ -11,9 +11,10 @@ import {
 
 type MotionElement = keyof typeof motion;
 
-type MotionDivProps = React.HTMLAttributes<HTMLElement> & {
+type BaseMotionProps = React.ComponentProps<typeof motion.div>;
+
+type MotionDivProps = BaseMotionProps & {
   as?: MotionElement;
-  children?: React.ReactNode;
 };
 
 export function MotionProvider({ children }: { children: React.ReactNode }) {
@@ -21,7 +22,7 @@ export function MotionProvider({ children }: { children: React.ReactNode }) {
 }
 
 export function MotionDiv({ as = "div", children, ...rest }: MotionDivProps) {
-  const Component = (motion[as] ?? motion.div) as React.ComponentType<React.HTMLAttributes<HTMLElement>>;
+  const Component = (motion[as] ?? motion.div) as ComponentType<BaseMotionProps>;
   return <Component {...rest}>{children}</Component>;
 }
 
