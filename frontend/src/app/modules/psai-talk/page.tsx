@@ -1,7 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { FormEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import {
+  FormEvent,
+  Suspense,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { useSearchParams } from "next/navigation";
 import Markdown from "@/components/Markdown";
 import { IMAGE_PATHS } from "@/lib/constants";
@@ -30,6 +38,14 @@ const INTRO_MESSAGE =
   "Hi, I'm Sara, your AI partner. I'm here to help you navigate everything you need to know about PSA. Just ask!";
 
 export default function PsaiTalkPage() {
+  return (
+    <Suspense fallback={<div className={styles.statusMessage}>Connecting you with Sara…</div>}>
+      <PsaiTalkContent />
+    </Suspense>
+  );
+}
+
+function PsaiTalkContent() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [draft, setDraft] = useState("");
   const [history, setHistory] = useState<ChatHistoryItem[]>([]);
