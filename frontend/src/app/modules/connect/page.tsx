@@ -1,7 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { FormEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import {
+  FormEvent,
+  Suspense,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { useSearchParams } from "next/navigation";
 import Markdown from "@/components/Markdown";
 import {
@@ -34,6 +42,14 @@ const BOARD_BANNERS: Record<
 const BOARD_SEQUENCE: BoardKey[] = ["psa-events", "alongside"];
 
 export default function ConnectPage() {
+  return (
+    <Suspense fallback={<div className={styles.statusMessage}>Loading connect feed…</div>}>
+      <ConnectContent />
+    </Suspense>
+  );
+}
+
+function ConnectContent() {
   const [activeBoard, setActiveBoard] = useState<BoardKey>("psa-events");
   const [posts, setPosts] = useState<Record<BoardKey, CommunityPost[]>>({
     "psa-events": [],
