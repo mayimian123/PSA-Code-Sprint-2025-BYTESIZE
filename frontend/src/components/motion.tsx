@@ -32,7 +32,9 @@ type ScrollValues = {
   moodY: MotionValue<number>;
 };
 
-export function useScrollValues(containerRef: React.RefObject<HTMLElement>): ScrollValues {
+export function useScrollValues(
+  containerRef: React.RefObject<HTMLElement | null>,
+): ScrollValues {
   const { scrollYProgress } = useScroll({ container: containerRef });
 
   const headerScale = useSpring(useTransform(scrollYProgress, [0, 1], [1, 0.95]), {
