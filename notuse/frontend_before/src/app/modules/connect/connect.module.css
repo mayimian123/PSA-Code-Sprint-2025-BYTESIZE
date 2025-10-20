@@ -1,0 +1,186 @@
+.wrapper {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 20px;
+  height: 100%;
+  min-height: 0;
+}
+
+.boardTabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 16px;
+  border: 1px solid rgba(27, 140, 166, 0.18);
+}
+
+.bannerButton {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 0;
+  cursor: pointer;
+  aspect-ratio: 4 / 1;
+  background: none;
+}
+
+.bannerButton:focus-visible {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 0 3px rgba(27, 140, 166, 0.45);
+}
+
+.bannerActive {
+  border-color: rgba(27, 140, 166, 0.6);
+  box-shadow: 0 0 0 4px rgba(27, 175, 191, 0.3);
+}
+
+.bannerImage {
+  object-fit: cover;
+}
+
+.bannerMask {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2));
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.bannerButton:hover .bannerMask {
+  opacity: 1;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+  padding-right: 6px;
+  min-height: 0;
+}
+
+.postCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 18px 20px;
+  border: 1px solid rgba(27, 140, 166, 0.16);
+  background: rgba(255, 255, 255, 0.95);
+  gap: 18px;
+}
+
+.postCard h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.meta {
+  margin: 6px 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+}
+
+.engagement {
+  display: flex;
+  gap: 14px;
+  min-width: 120px;
+  justify-content: flex-end;
+  font-weight: 600;
+  color: var(--color-brand-copper);
+}
+
+.polishPreview {
+  border: 1px solid rgba(27, 140, 166, 0.24);
+  padding: 16px 18px;
+  background: rgba(240, 246, 246, 0.9);
+}
+
+.polishPreview h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: var(--color-brand-teal);
+}
+
+.composer {
+  border: 1px solid rgba(27, 140, 166, 0.2);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.96);
+  flex-shrink: 0;
+}
+
+.composer textarea {
+  width: 100%;
+  border: 1px solid rgba(27, 140, 166, 0.2);
+  resize: none;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 14px;
+  background: rgba(247, 249, 249, 0.96);
+}
+
+.composer textarea:focus {
+  outline: 2px solid rgba(27, 140, 166, 0.35);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.composerActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.polishControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.polishLabel {
+  font-weight: 600;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+}
+
+.polishControls select {
+  padding: 8px 12px;
+  border: 1px solid rgba(27, 140, 166, 0.22);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.polishControls button {
+  padding: 8px 14px;
+  border: 1px solid rgba(27, 140, 166, 0.25);
+  background: rgba(27, 175, 191, 0.12);
+  color: var(--color-brand-teal);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.polishControls button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.sendButton {
+  padding: 10px 22px;
+  border: none;
+  background: linear-gradient(135deg, var(--color-brand-teal), var(--color-brand-aqua));
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.sendButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

@@ -1,0 +1,101 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* Lighter, fresher ocean-inspired gradient */
+  background: linear-gradient(
+    180deg,
+    #e7f5fb 0%,    /* slightly deeper light ocean blue */
+    #92d4f0 28%,   /* original soft ocean blue */
+    #5bb8de 60%,   /* original ocean mid */
+    #284754 100%   /* original deep ocean tone (removed darkest) */
+  );
+  min-width: 200px; /* allow narrower width for collapsed overlay */
+  max-width: 240px; /* retain full width for fixed sidebar */
+  height: 100vh;
+  padding: 36px 24px;
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  color: rgba(255, 255, 255, 0.92); /* ensure readability on medium/dark blues */
+}
+
+/* Narrow overlay variant: center primary nav items horizontally */
+.sidebarNarrow .nav {
+  align-items: center; /* center each row block as a whole */
+}
+
+/* Keep icons in a fixed column so they align neatly */
+.sidebarNarrow .navItem {
+  width: 180px;                /* fixed content width inside the narrower overlay */
+  display: grid;
+  grid-template-columns: 28px 1fr; /* icon column + label column */
+  column-gap: 10px;
+  align-items: center;
+  justify-items: start;
+  padding: 10px 8px;           /* compact padding */
+}
+
+.sidebarNarrow .navIcon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Keep account layout unchanged */
+.sidebarNarrow .account .navItem {
+  width: auto;
+  display: flex; /* revert to default flex layout for account */
+}
+
+.logoShell {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.92);
+  border-left: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.navItem:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.navItemActive {
+  color: #ffffff;
+  border-color: var(--color-brand-aqua);
+}
+
+.navIcon {
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.account {
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Ensure good contrast over the darker gradient at the bottom */
+.account .navItem {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.account .navItem:hover,
+.account .navItemActive {
+  color: #ffffff;
+}

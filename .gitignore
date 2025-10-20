@@ -1,0 +1,30 @@
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+
+# FastAPI backend
+backend/.env
+backend/app/.env
+notuse/backend/.env
+notuse/backend/app/.env
+
+# Node / Next.js frontend
+node_modules/
+frontend/node_modules/
+.next/
+out/
+
+# Build artifacts
+dist/
+
+# Archives & data dumps
+*.zip
+
+# IDE / tooling
+.idea/
+.vscode/

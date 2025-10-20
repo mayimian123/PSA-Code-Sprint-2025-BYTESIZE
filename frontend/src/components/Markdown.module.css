@@ -1,0 +1,50 @@
+/* Basic, clean typography for markdown-rendered content */
+.markdown {
+  color: inherit;
+  line-height: 1.6;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  margin: 0.6em 0 0.4em;
+  line-height: 1.25;
+}
+
+.markdown h1 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); }
+.markdown h2 { font-size: clamp(1.4rem, 2.6vw, 1.8rem); }
+.markdown h3 { font-size: clamp(1.2rem, 2.2vw, 1.4rem); }
+
+.markdown p { margin: 0.5em 0; }
+.markdown p,
+.markdown li {
+  white-space: pre-wrap; /* preserve single newlines and consecutive spaces */
+}
+
+.markdown ul,
+.markdown ol {
+  margin: 0.4em 0 0.6em 1.2em;
+  padding: 0;
+}
+
+.markdown li { margin: 0.25em 0; }
+
+.markdown code {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.95em;
+}
+
+.markdown pre {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.markdown a {
+  color: #0b63a1;
+  text-decoration: underline;
+}

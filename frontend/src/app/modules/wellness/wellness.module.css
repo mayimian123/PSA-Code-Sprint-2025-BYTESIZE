@@ -1,0 +1,252 @@
+.wrapper {
+  position: relative;
+  height: calc(100vh - 96px); /* lock module viewport (desktop) */
+  min-height: 0;
+  overflow: hidden; /* only the list scrolls */
+}
+@media (max-width: 1080px) {
+  .wrapper { height: calc(100vh - 64px); }
+}
+
+/* Prevent page-level scroll on this route; only internal list scrolls */
+:global(.main) {
+  overflow: hidden !important;
+}
+
+.profile {
+  position: absolute;
+  inset: 0 0 auto 0; /* top-fixed inside wrapper */
+  height: var(--wellness-header-h);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 14px; /* balanced spacing */
+  padding: 16px 24px 20px; /* add bottom padding to avoid overlap */
+  border: 1px solid rgba(136, 166, 153, 0.35);
+  background: rgba(255, 255, 255, 0.95);
+  overflow: hidden;
+}
+
+/* Inline avatar next to name */
+.userRow {
+  display: flex;
+  align-items: center;
+  gap: 14px; /* spacing between name and avatar */
+}
+.avatar {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(27, 140, 166, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* compact class retained for compatibility, but not applied now */
+.profileCompact { padding: 14px 24px; gap: 8px; }
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.userName {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-brand-teal);
+}
+
+.encourage {
+  margin: 8px 0 0;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  /* Natural wrapping only when needed; avoid overly narrow columns */
+  white-space: normal;
+  overflow-wrap: anywhere;
+  max-width: clamp(520px, 60vw, 900px);
+}
+
+.moodPicker {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(110px, 1fr));
+  gap: 8px; /* tighter gaps so borders are fully visible */
+  margin-top: 4px; /* separation from header text row */
+  padding: 6px 8px; /* ensure button borders do not touch header border */
+}
+
+/* Gradually hide mood selector in compact header */
+/* mood stays visible as part of fixed top region */
+
+.moodButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 10px; /* shrink to avoid clipping */
+  border-radius: 10px;
+  border: 1px solid rgba(27, 140, 166, 0.22);
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.moodButton:hover {
+  transform: translateY(-1px);
+}
+
+.moodSelected {
+  border-color: var(--color-brand-teal);
+}
+
+.moodEmoji {
+  font-size: 1.8rem;
+}
+
+.moodLabel {
+  font-size: 0.78rem;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+.activities {
+  position: absolute;
+  top: calc(var(--wellness-header-h) + var(--wellness-gap));
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 20px;
+  overflow-y: auto; /* list scrolls inside fixed container */
+  padding-right: 6px;
+  /* hide scrollbar across browsers while keeping scroll functionality */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  /* Two full rows visible by default: row height fills available space minus a single row gap */
+  --rows: 2;
+  --v-gap: 20px;
+  grid-auto-rows: calc((100% - var(--v-gap)) / 2);
+}
+.activities::-webkit-scrollbar { width: 0; height: 0; }
+.activities::-webkit-scrollbar-thumb { background: transparent; }
+
+.card {
+  display: grid;
+  grid-template-rows: 42% 1fr; /* proportional image height + scrollable content */
+  border: 1px solid rgba(27, 140, 166, 0.2);
+  height: 100%; /* fill the grid row height */
+  background: rgba(255, 255, 255, 0.96);
+  overflow: hidden; /* keep internals contained */
+}
+
+.cardImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(27, 140, 166, 0.12);
+}
+
+.cardImage img {
+  object-fit: cover;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 18px 18px;
+  overflow-y: auto; /* text scrolls internally if too long */
+}
+
+.category {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-brand-copper);
+}
+
+.cardContent h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--color-text-dark);
+}
+
+.cardContent p {
+  margin: 0;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.time {
+  margin-top: auto;
+  font-weight: 600;
+  color: var(--color-brand-teal);
+}
+
+.location {
+  color: var(--color-brand-copper);
+  font-weight: 600;
+}
+
+.statusMessage {
+  margin: 0;
+  padding: 12px 16px;
+  border: 1px dashed rgba(27, 140, 166, 0.35);
+  color: var(--color-brand-teal);
+  background: rgba(240, 246, 246, 0.9);
+  font-size: 0.95rem;
+  border-radius: 12px;
+  grid-column: 1 / -1;
+}
+
+.statusMessage[role="alert"] {
+  border-color: rgba(166, 33, 51, 0.35);
+  color: #a62133;
+  background: rgba(166, 33, 51, 0.12);
+}
+
+@media (max-width: 1080px) {
+  .moodPicker {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  }
+
+  .activities {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+/* Hide mood selector on smaller/constrained viewports while preserving layout stability */
+@media (max-width: 900px), (max-height: 720px) {
+  .moodPicker {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 0;
+    pointer-events: none;
+    transition: max-height 0.25s ease, opacity 0.2s ease;
+  }
+}
+
+/* Hide all scrollbars within wellness page while keeping scroll functional */
+.wrapper * {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.wrapper *::-webkit-scrollbar { width: 0; height: 0; }
+
+/* Responsive fixed image height */
+:root {
+  --card-image-h: 180px;
+  --wellness-header-h: 260px;
+  --wellness-gap: 20px;
+}
+@media (max-width: 1080px) {
+  :root { --card-image-h: 160px; --wellness-header-h: 200px; }
+}
+@media (max-width: 720px) {
+  :root { --card-image-h: 140px; --wellness-header-h: 180px; }
+}

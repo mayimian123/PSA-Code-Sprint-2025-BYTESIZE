@@ -1,0 +1,15 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="loginGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1BAFBF" />
+      <stop offset="60%" stop-color="#1B8CA6" />
+      <stop offset="100%" stop-color="#A66151" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#loginGradient)" />
+  <g opacity="0.25">
+    <rect x="220" y="120" width="380" height="380" rx="38" fill="#F2F2F2" />
+    <rect x="1370" y="220" width="260" height="320" rx="32" fill="#F2F2F2" />
+    <rect x="780" y="620" width="520" height="320" rx="40" fill="#F2F2F2" />
+  </g>
+</svg>

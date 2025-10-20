@@ -1,0 +1,107 @@
+﻿Function / Unit / Skill,Specialisation / Unit,Topic
+Automation and Robotics,Engineering Systems,Technology & Engineering
+Automation and Robotics,Robotic Process Automation,Technology & Engineering
+Business Development,Business Analysis,Commercial & Business Development
+Business Development,Transactional,Commercial & Business Development
+Commercial,Account Management,Commercial & Business Development
+Corporate Affairs,Public Relations Management,Commercial & Business Development
+Data & AI: Data Engineering,Data Model Architecture,Data & Digital Intelligence
+Data & AI: Data Engineering,Data Model Design,Data & Digital Intelligence
+Data & AI: Data Science,Data Understanding & Preparation,Data & Digital Intelligence
+Data & AI: Data Science,Data Visualisation,Data & Digital Intelligence
+Data & AI: Data Science,Descriptive / Diagnostics Analytics,Data & Digital Intelligence
+Data & AI: Data Science,Machine Learning & AI,Data & Digital Intelligence
+Data & AI: Data Science,Predictive / Prescriptive Analytics,Data & Digital Intelligence
+Data & AI: Data Strategy & Management,Data Strategy & Management: Data Governance,Data & Digital Intelligence
+Data & AI: Optimization,Relational database/datagrid design and management,Data & Digital Intelligence
+Data & AI: Optimization,System architecture design and understanding of PaaS and SaaS,Data & Digital Intelligence
+Data & AI: RPA,RPA Goverance & Process Design,Data & Digital Intelligence
+Data & AI: RPA,RPA Software Development,Data & Digital Intelligence
+Data & AI: Simulation,3D Model Visualization,Data & Digital Intelligence
+Data & AI: Simulation,Descriptive/diagnostics data analytics,Data & Digital Intelligence
+Data & AI: Simulation,Simulation model design & development,Data & Digital Intelligence
+Engineering: Civil Engineering,Building Maintenance and Facilities Management,Technology & Engineering
+Engineering: Civil Engineering,Green Building Technologies and Management,Technology & Engineering
+Engineering: Civil Engineering,Planning and Development,Technology & Engineering
+Engineering: Electrical and Electronics Engineering,Battery Chemistry and Management,Technology & Engineering
+Engineering: Electrical and Electronics Engineering,Battery Energy Storage and Charging System,Technology & Engineering
+Engineering: Electrical and Electronics Engineering,Electrical Infrastructure,Technology & Engineering
+Engineering: Equipment Engineering,Automation Systems,Technology & Engineering
+Engineering: Equipment Engineering,Autonomous Systems,Technology & Engineering
+Engineering: Equipment Engineering,Horizontal Transport Development,Technology & Engineering
+Engineering: Equipment Engineering,Smart Grid,Technology & Engineering
+Finance,Accounting and Consolidation,Corporate Strategy & People
+Finance,Audit,Corporate Strategy & People
+Finance,Claims and Insurance,Corporate Strategy & People
+Finance,Financial Modeling,Corporate Strategy & People
+Finance,Green Finance: Carbon Accounting and Management,Corporate Strategy & People
+Finance,Risk Management,Corporate Strategy & People
+Finance,Tax,Corporate Strategy & People
+General Management,Business Unit Management,Corporate Strategy & People
+HSS,GHSSS Policy and Planning,Corporate Strategy & People
+Human Resource,Benefits,Corporate Strategy & People
+Human Resource,Compensation,Corporate Strategy & People
+Human Resource,Generalist / Business Partner,Corporate Strategy & People
+Human Resource,HR Information Systems / Technology,Corporate Strategy & People
+Human Resource,Industrial Relations,Corporate Strategy & People
+Human Resource,Organisation Development,Corporate Strategy & People
+Human Resource,Talent Acquisition / Recruitment,Corporate Strategy & People
+Human Resource,Talent Management,Corporate Strategy & People
+Human Resource,Training / Learning and Development,Corporate Strategy & People
+Info Tech: Application Development,Software Architecture: Software Analysis & Design,Technology & Engineering
+Info Tech: Application Development,Software Architecture: Software Architecture,Technology & Engineering
+Info Tech: Application Development,Software Engineering: Agile Methodology,Technology & Engineering
+Info Tech: Application Development,Software Engineering: Automated Test Development and Testing,Technology & Engineering
+Info Tech: Application Development,Software Engineering: DevOps / DevSecOps,Technology & Engineering
+Info Tech: Application Development,Software Engineering: Software Integration,Technology & Engineering
+Info Tech: Application Development,UI/UX Design & Development: Customer Experience Management,Technology & Engineering
+Info Tech: Application Development,UI/UX Design & Development: User Interface Design,Technology & Engineering
+Info Tech: Business Domain Expertise,Business Domain & Needs Analysis,Technology & Engineering
+Info Tech: Cybersecurity,Cybersecurity Governance : Cybersecurity Architecture,Technology & Engineering
+Info Tech: Cybersecurity,Cybersecurity Governance : Cybersecurity Governance,Technology & Engineering
+Info Tech: Cybersecurity,Cybersecurity Incident Handling: Cybersecurity Threat Analysis and Defence,Technology & Engineering
+Info Tech: Cybersecurity,Cybersecurity Operation: Network Security Management,Technology & Engineering
+Info Tech: Infrastructure,Cloud Computing: Cloud Administration & Management,Technology & Engineering
+Info Tech: Infrastructure,Cloud Computing: Cloud Architecture,Technology & Engineering
+Info Tech: Infrastructure,Infrastructure Architecture: Network Architecture,Technology & Engineering
+Info Tech: Infrastructure,Network Management: SDN and Network Automation,Technology & Engineering
+Info Tech: Infrastructure,Operations and Management: IT Service Management,Technology & Engineering
+Info Tech: Infrastructure,Systems & Middleware Management: Backup/ Storage / Virtualisation Management,Technology & Engineering
+Info Tech: Infrastructure,Systems & Middleware Management: Desktops / Servers Management,Technology & Engineering
+Info Tech: IT Governance & Strategy,Business Unit IT Management,Technology & Engineering
+Info Tech: IT Governance & Strategy,Change & Transformation Management,Technology & Engineering
+Info Tech: IT Governance & Strategy,Enterprise Architecture,Technology & Engineering
+Info Tech: IT Governance & Strategy,Process Improvement & Optimisation and Problem Management,Technology & Engineering
+Info Tech: IT Governance & Strategy,Technology Management & Innovation,Technology & Engineering
+Info Tech: IT Governance & Strategy,Vendor and Contract Management,Technology & Engineering
+Info Tech: Product Management,Enterprise Architecture: Business Architecture,Commercial & Business Development
+Info Tech: Product Management,IP Management: Product Intellectual Property Management,Commercial & Business Development
+Info Tech: Product Management,Product Life Cycle Management: Customer Experience Management - CX,Commercial & Business Development
+Info Tech: Product Management,Product Life Cycle Management: Product Configuration Management,Commercial & Business Development
+Info Tech: Product Management,Product Life Cycle Management: Product Development Lifecycle Management,Commercial & Business Development
+Info Tech: Product Management,Product Life Cycle Management: Vendor Management,Commercial & Business Development
+Legal and Corporate Secretariat,Legal - Merger and Acquisition,Commercial & Business Development
+Legal and Corporate Secretariat,Legal - Personal Data Protection - PDPA,Commercial & Business Development
+Operations,"Auxiliary, Governmental and Customs Management",Operations & Supply Chain
+Operations,Container Planning Management,Operations & Supply Chain
+Operations,Container Terminal Management,Operations & Supply Chain
+Operations,Multi-purpose Terminals,Operations & Supply Chain
+Operations,"Resource Planning, Deployment and Support",Operations & Supply Chain
+Operations,Stowage Planning,Operations & Supply Chain
+Operations,Transhipment,Operations & Supply Chain
+Operations,Yard Operations and Planning,Operations & Supply Chain
+Procurement,Category Management,Corporate Strategy & People
+Procurement,Global Framework Agreement development,Corporate Strategy & People
+Procurement,Supplier Management,Corporate Strategy & People
+Procurement,Sustainable Procurement,Corporate Strategy & People
+Supply Chain and Logistics,4PL,Operations & Supply Chain
+Supply Chain and Logistics,CFS,Operations & Supply Chain
+Supply Chain and Logistics,Contract Logistics,Operations & Supply Chain
+Supply Chain and Logistics,Port Ecosystem,Operations & Supply Chain
+Sustainability,Energy Generalist,Corporate Strategy & People
+Sustainability,Energy Policy and Regulations,Corporate Strategy & People
+Sustainability,ESG policies and strategies,Corporate Strategy & People
+Sustainability,International Forum Green Advocacy,Corporate Strategy & People
+Sustainability,Maritime and Shipping Decarbonisation,Corporate Strategy & People
+Sustainability,Sustainable Supply Chain Management: Green Logistics,Corporate Strategy & People
+Sustainability,Waste Management,Corporate Strategy & People

@@ -1,0 +1,194 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: minmax(240px, 320px) 1fr;
+  gap: 28px;
+  height: calc(100vh - 96px); /* fixed module viewport on desktop */
+  min-height: 0; /* allow inner areas to scroll */
+}
+
+.jobList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-right: 6px;
+  overflow-y: auto; /* scroll inside the column */
+  min-height: 0;
+  scrollbar-width: none; /* Firefox hide */
+  scroll-behavior: smooth;
+}
+.jobList::-webkit-scrollbar { width: 0; height: 0; }
+
+.statusMessage {
+  margin: 0;
+  padding: 12px 16px;
+  border: 1px dashed rgba(27, 140, 166, 0.35);
+  color: var(--color-brand-teal);
+  background: rgba(240, 246, 246, 0.9);
+  font-size: 0.95rem;
+  border-radius: 10px;
+}
+
+.statusMessage[role="alert"] {
+  border-color: rgba(166, 33, 51, 0.35);
+  color: #a62133;
+  background: rgba(166, 33, 51, 0.12);
+}
+
+.jobCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 18px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(27, 140, 166, 0.16);
+  background: rgba(255, 255, 255, 0.95);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.jobCard:hover {
+  transform: translateY(-2px);
+}
+
+.jobCardActive {
+  border-color: var(--color-brand-teal);
+  background: rgba(27, 175, 191, 0.12);
+}
+
+.jobCategory {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-brand-copper);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.jobTitle {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  border: 1px solid rgba(27, 140, 166, 0.2);
+  background: rgba(255, 255, 255, 0.97);
+  overflow-y: auto; /* scroll only inside panel */
+  min-height: 0;
+}
+
+.detail h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: var(--color-brand-teal);
+}
+
+.detailCategory {
+  margin: 0;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.summary {
+  margin: 12px 0 0;
+  line-height: 1.6;
+  color: var(--color-text-dark);
+  max-width: 640px;
+  white-space: pre-line;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+}
+
+.applyButton,
+.analysisButton {
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.applyButton {
+  background: linear-gradient(135deg, var(--color-brand-teal), var(--color-brand-aqua));
+  color: #fff;
+}
+
+.applyButton:hover {
+  transform: translateY(-1px);
+}
+
+.analysisButton {
+  background: #fff;
+  color: var(--color-brand-teal);
+  border-color: rgba(27, 140, 166, 0.3);
+}
+
+.analysisButton:hover {
+  transform: translateY(-1px);
+  border-color: var(--color-brand-teal);
+}
+
+.analysisActive {
+  background: rgba(27, 140, 166, 0.1);
+  border-color: var(--color-brand-teal);
+}
+
+.analysisPanel {
+  margin-top: 4px;
+  padding: 16px 20px;
+  border: 1px solid rgba(27, 140, 166, 0.24);
+  background: rgba(240, 246, 246, 0.9);
+  color: var(--color-text-dark);
+  line-height: 1.5;
+  border-radius: 10px;
+  max-height: clamp(160px, 28vh, 320px);
+  overflow: auto; /* only when needed */
+  scrollbar-width: thin; /* minimal FF scrollbar when needed */
+}
+.analysisPanel::-webkit-scrollbar { width: 8px; height: 8px; }
+.analysisPanel::-webkit-scrollbar-thumb { background: rgba(27, 140, 166, 0.35); border-radius: 999px; }
+
+.analysisPanel strong {
+  font-weight: 700;
+}
+
+.scoreGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.scoreCard {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border: 1px solid rgba(27, 140, 166, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.scoreValue {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-brand-teal);
+  min-width: 56px;
+}
+
+@media (max-width: 960px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    height: calc(100vh - 64px); /* align with mobile module padding */
+  }
+}

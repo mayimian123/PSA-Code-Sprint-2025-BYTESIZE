@@ -1,0 +1,119 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  height: 100%;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--color-brand-teal);
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: minmax(0, 2.5fr) minmax(0, 1.5fr);
+  gap: 24px;
+}
+
+.detailList {
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(27, 140, 166, 0.18);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(27, 140, 166, 0.12);
+}
+
+.row:last-of-type {
+  border-bottom: none;
+}
+
+.row dt {
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+
+.row dd {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.languages {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(27, 140, 166, 0.18);
+  padding: 18px 20px;
+}
+
+.languages h2 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-brand-teal);
+}
+
+.languages ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.languages li {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
+
+.level {
+  color: var(--color-brand-copper);
+}
+
+.signOut {
+  align-self: flex-end;
+  padding: 10px 22px;
+  border-radius: 10px;
+  border: 1px solid rgba(166, 97, 81, 0.35);
+  background: transparent;
+  color: #a66151;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.signOut:hover {
+  transform: translateY(-1px);
+  background: rgba(166, 97, 81, 0.1);
+}
+
+@media (max-width: 960px) {
+  .summary {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}

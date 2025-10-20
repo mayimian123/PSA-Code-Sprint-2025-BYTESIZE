@@ -1,0 +1,556 @@
+[
+  {
+    "employee_id": "EMP-20001",
+    "personal_info": {
+      "name": "Samantha Lee",
+      "email": "samantha.lee@globalpsa.com",
+      "office_location": "PSA Singapore",
+      "languages": [
+        { "language": "English", "proficiency": "Fluent" },
+        { "language": "Korean", "proficiency": "Intermediate" }
+      ]
+    },
+    "employment_info": {
+      "job_title": "Cloud Solutions Architect",
+      "department": "Information Technology",
+      "unit": "Infrastructure Architecture & Cloud",
+      "line_manager": "Victor Tan",
+      "in_role_since": "2022-07-01",
+      "hire_date": "2016-03-15",
+      "last_updated": "2025-10-09"
+    },
+    "skills": [
+      {
+        "function_area": "Info Tech: Infrastructure",
+        "specialization": "Cloud Computing: Cloud Architecture",
+        "skill_name": "Cloud Architecture"
+      },
+      {
+        "function_area": "Info Tech: Infrastructure",
+        "specialization": "Cloud Computing: Cloud DevOps & Automation",
+        "skill_name": "Cloud DevOps & Automation"
+      },
+      {
+        "function_area": "Info Tech: Infrastructure",
+        "specialization": "Cloud Computing: Securing Cloud Infrastructure",
+        "skill_name": "Securing Cloud Infrastructure"
+      },
+      {
+        "function_area": "Info Tech: Infrastructure",
+        "specialization": "Infrastructure Architecture: Infrastructure Design, Analysis & Architecture",
+        "skill_name": "Infrastructure Design, Analysis & Architecture"
+      },
+      {
+        "function_area": "Info Tech: Infrastructure",
+        "specialization": "Infrastructure Architecture: Network Architecture",
+        "skill_name": "Network Architecture"
+      },
+      {
+        "function_area": "Info Tech: Infrastructure",
+        "specialization": "Systems & Middleware Management: Middleware & Web Servers",
+        "skill_name": "Middleware & Web Servers"
+      },
+      {
+        "function_area": "Info Tech: IT Governance & Strategy",
+        "specialization": "Enterprise Architecture",
+        "skill_name": "Enterprise Architecture"
+      }
+    ],
+    "competencies": [
+      { "name": "Stakeholder & Partnership Management", "level": "Advanced" },
+      { "name": "Change & Transformation Management", "level": "Advanced" },
+      { "name": "Technology Management & Innovation", "level": "Intermediate" }
+    ],
+    "experiences": [
+      {
+        "type": "Program",
+        "organization": "PSA Singapore",
+        "program": "Hybrid Cloud Migration",
+        "period": { "start": "2022-08-01", "end": "2023-12-31" },
+        "focus": "Architecture lead for hybrid cloud; IaC pipelines; zero-trust controls."
+      },
+      {
+        "type": "Rotation",
+        "organization": "PSA Singapore",
+        "program": "Infrastructure Automation",
+        "period": { "start": "2019-01-01", "end": "2021-12-31" },
+        "focus": "Containerization and CI/CD enablement for enterprise workloads."
+      }
+    ],
+    "positions_history": [
+      {
+        "role_title": "Cloud Solutions Architect",
+        "organization": "PSA Singapore",
+        "period": { "start": "2022-07-01", "end": null },
+        "focus_areas": ["Hybrid cloud design", "Security-by-design", "Cost optimization"],
+        "key_skills_used": ["Cloud Architecture", "Securing Cloud Infrastructure", "Cloud DevOps & Automation"]
+      },
+      {
+        "role_title": "Senior Systems Engineer",
+        "organization": "PSA Singapore",
+        "period": { "start": "2019-01-01", "end": "2022-06-30" },
+        "focus_areas": ["Containerization", "Infrastructure automation"]
+      },
+      {
+        "role_title": "Systems Engineer",
+        "organization": "PSA Singapore",
+        "period": { "start": "2016-03-15", "end": "2018-12-31" },
+        "focus_areas": ["On-prem server operations", "Network administration"]
+      }
+    ],
+    "projects": [
+      {
+        "project_name": "Hybrid Cloud Migration Initiative",
+        "role": "Lead Architect",
+        "period": { "start": "2022-08-01", "end": "2023-12-31" },
+        "description": "Lift-and-shift plus replatform; IaC pipelines; zero-trust access for critical services.",
+        "outcomes": ["30% infrastructure cost reduction", "99.95% service availability achieved"]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor's Degree, Computer Engineering",
+        "institution": "National University of Singapore (NUS)",
+        "period": { "start": "2012-08-01", "end": "2016-06-30" }
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP-20002",
+    "personal_info": {
+      "name": "Nur Aisyah Binte Rahman",
+      "email": "aisyah.rahman@globalpsa.com",
+      "office_location": "PSA Singapore",
+      "languages": [
+        { "language": "English", "proficiency": "Fluent" },
+        { "language": "Malay", "proficiency": "Fluent" }
+      ]
+    },
+    "employment_info": {
+      "job_title": "Cybersecurity Analyst",
+      "department": "Information Technology",
+      "unit": "Cybersecurity Operations",
+      "line_manager": "Daniel Chua",
+      "in_role_since": "2024-07-01",
+      "hire_date": "2023-01-15",
+      "last_updated": "2025-10-09"
+    },
+    "skills": [
+      {
+        "function_area": "Info Tech: Cybersecurity",
+        "specialization": "Cybersecurity Operation: Vulnerability Management",
+        "skill_name": "Vulnerability Management"
+      },
+      {
+        "function_area": "Info Tech: Cybersecurity",
+        "specialization": "Cybersecurity Operation: Network Security Management",
+        "skill_name": "Network Security Management"
+      },
+      {
+        "function_area": "Info Tech: Cybersecurity",
+        "specialization": "Cybersecurity Incident Handling: Cybersecurity Threat Intelligence and Detection",
+        "skill_name": "Cybersecurity Threat Intelligence and Detection"
+      },
+      {
+        "function_area": "Info Tech: Cybersecurity",
+        "specialization": "Cybersecurity Incident Handling: Cybersecurity Forensics",
+        "skill_name": "Cybersecurity Forensics"
+      },
+      {
+        "function_area": "Info Tech: Cybersecurity",
+        "specialization": "Cybersecurity Governance : Cybersecurity Risk Management",
+        "skill_name": "Cybersecurity Risk Management"
+      }
+    ],
+    "competencies": [
+      { "name": "IT Audit", "level": "Intermediate" },
+      { "name": "Quality Standards", "level": "Intermediate" },
+      { "name": "Incident Response Playbook Development", "level": "Beginner" }
+    ],
+    "experiences": [
+      {
+        "type": "Rotation",
+        "organization": "PSA Singapore",
+        "program": "SOC Rotation",
+        "period": { "start": "2024-07-01", "end": "2025-03-31" },
+        "focus": "SIEM tuning, alert triage, and vulnerability remediation coordination."
+      },
+      {
+        "type": "Exercise",
+        "organization": "PSA Singapore",
+        "program": "Purple Teaming",
+        "period": { "start": "2025-02-10", "end": "2025-02-28" },
+        "focus": "Attack simulation and detection gap analysis."
+      }
+    ],
+    "positions_history": [
+      {
+        "role_title": "Cybersecurity Analyst",
+        "organization": "PSA Singapore",
+        "period": { "start": "2024-07-01", "end": null },
+        "focus_areas": ["Vulnerability scanning & remediation", "Network security monitoring"],
+        "key_skills_used": ["Vulnerability Management", "Network Security Management"]
+      },
+      {
+        "role_title": "IT Graduate Trainee",
+        "organization": "PSA Singapore",
+        "period": { "start": "2023-01-15", "end": "2024-06-30" },
+        "focus_areas": ["Endpoint hardening", "Identity & access reviews"]
+      }
+    ],
+    "projects": [
+      {
+        "project_name": "Vulnerability Management Uplift",
+        "role": "Analyst",
+        "period": { "start": "2024-08-01", "end": "2025-03-31" },
+        "description": "Streamlined patching SLAs and automated reporting dashboards across business units.",
+        "outcomes": ["Mean Time To Remediate reduced by 22%", "Executive risk dashboard adopted"]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor's Degree, Computer Engineering",
+        "institution": "National University of Singapore (NUS)",
+        "period": { "start": "2019-08-01", "end": "2023-06-30" }
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP-20003",
+    "personal_info": {
+      "name": "Rohan Mehta",
+      "email": "rohan.mehta@globalpsa.com",
+      "office_location": "PSA Singapore",
+      "languages": [
+        { "language": "English", "proficiency": "Fluent" },
+        { "language": "Hindi", "proficiency": "Professional" }
+      ]
+    },
+    "employment_info": {
+      "job_title": "Finance Manager (FP&A)",
+      "department": "Finance",
+      "unit": "Financial Planning and Analysis",
+      "line_manager": "Elaine Koh",
+      "in_role_since": "2022-06-01",
+      "hire_date": "2017-08-01",
+      "last_updated": "2025-10-09"
+    },
+    "skills": [
+      {
+        "function_area": "Finance",
+        "specialization": "Financial Planning and Analysis",
+        "skill_name": "Financial Planning and Analysis"
+      },
+      {
+        "function_area": "Finance",
+        "specialization": "Cost Management and Budget",
+        "skill_name": "Cost Management and Budget"
+      },
+      {
+        "function_area": "Finance",
+        "specialization": "Financial Modeling",
+        "skill_name": "Financial Modeling"
+      },
+      {
+        "function_area": "Finance",
+        "specialization": "Risk Management",
+        "skill_name": "Risk Management"
+      },
+      {
+        "function_area": "Finance",
+        "specialization": "Treasury",
+        "skill_name": "Treasury"
+      },
+      {
+        "function_area": "Finance",
+        "specialization": "Terminal Reporting",
+        "skill_name": "Terminal Reporting"
+      },
+      {
+        "function_area": "Finance",
+        "specialization": "Green Finance: Carbon Accounting and Management",
+        "skill_name": "Carbon Accounting and Management"
+      }
+    ],
+    "competencies": [
+      { "name": "Stakeholder & Partnership Management", "level": "Advanced" },
+      { "name": "Process Improvement & Optimisation and Problem Management", "level": "Advanced" },
+      { "name": "IT Strategy & Planning", "level": "Intermediate" }
+    ],
+    "experiences": [
+      {
+        "type": "Regional Portfolio",
+        "organization": "PSA Singapore",
+        "program": "APAC FP&A Consolidation",
+        "period": { "start": "2022-06-01", "end": null },
+        "focus": "Budgeting, forecasting, and performance dashboards across APAC terminals."
+      },
+      {
+        "type": "Transformation",
+        "organization": "PSA Singapore",
+        "program": "Driver-based Forecasting",
+        "period": { "start": "2023-01-01", "end": "2023-12-31" },
+        "focus": "Redesigned forecast models with operational drivers and automation."
+      }
+    ],
+    "positions_history": [
+      {
+        "role_title": "Finance Manager (FP&A)",
+        "organization": "PSA Singapore",
+        "period": { "start": "2022-06-01", "end": null },
+        "focus_areas": ["Budgeting & Forecasting", "Capex evaluation", "Performance dashboards"],
+        "key_skills_used": ["Financial Planning and Analysis", "Financial Modeling"]
+      },
+      {
+        "role_title": "Senior Financial Analyst",
+        "organization": "PSA Singapore",
+        "period": { "start": "2019-01-01", "end": "2022-05-31" },
+        "focus_areas": ["Management reporting", "Cost optimization"]
+      },
+      {
+        "role_title": "Financial Analyst",
+        "organization": "PSA Singapore",
+        "period": { "start": "2017-08-01", "end": "2018-12-31" },
+        "focus_areas": ["Variance analysis", "Operating metrics"]
+      }
+    ],
+    "projects": [
+      {
+        "project_name": "Zero-Based Budgeting (ZBB) Rollout",
+        "role": "Workstream Lead",
+        "period": { "start": "2023-02-01", "end": "2023-09-30" },
+        "description": "Designed templates and governance for ZBB across business units.",
+        "outcomes": ["5% Opex reduction YoY", "Improved budget transparency"]
+      },
+      {
+        "project_name": "FP&A Power BI Dashboard",
+        "role": "Product Owner",
+        "period": { "start": "2022-07-01", "end": "2022-12-31" },
+        "description": "Automated reporting pipelines and executive dashboards.",
+        "outcomes": ["Manual reporting effort reduced by 60%", "Single source of truth established"]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master's Degree, Finance",
+        "institution": "Nanyang Business School (NTU)",
+        "period": { "start": "2015-08-01", "end": "2017-06-30" }
+      },
+      {
+        "degree": "Bachelor's Degree, Accounting",
+        "institution": "University of Delhi",
+        "period": { "start": "2011-08-01", "end": "2014-06-30" }
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP-20004",
+    "personal_info": {
+      "name": "Grace Lee",
+      "email": "grace.lee@globalpsa.com",
+      "office_location": "PSA Singapore",
+      "languages": [
+        { "language": "English", "proficiency": "Fluent" },
+        { "language": "Mandarin", "proficiency": "Professional" }
+      ]
+    },
+    "employment_info": {
+      "job_title": "Senior HR Business Partner",
+      "department": "Human Resource",
+      "unit": "HRBP – Operations Cluster",
+      "line_manager": "Head of HRBP",
+      "in_role_since": "2021-10-01",
+      "hire_date": "2012-02-01",
+      "last_updated": "2025-10-09"
+    },
+    "skills": [
+      {
+        "function_area": "Human Resource",
+        "specialization": "Generalist / Business Partner",
+        "skill_name": "Generalist / Business Partner"
+      },
+      {
+        "function_area": "Human Resource",
+        "specialization": "Talent Management",
+        "skill_name": "Talent Management"
+      },
+      {
+        "function_area": "Human Resource",
+        "specialization": "Staff Development and Engagement",
+        "skill_name": "Staff Development and Engagement"
+      },
+      {
+        "function_area": "Human Resource",
+        "specialization": "Compensation",
+        "skill_name": "Compensation"
+      },
+      {
+        "function_area": "Human Resource",
+        "specialization": "HR Information Systems / Technology",
+        "skill_name": "HR Information Systems / Technology"
+      },
+      {
+        "function_area": "Human Resource",
+        "specialization": "Leadership Development",
+        "skill_name": "Leadership Development"
+      },
+      {
+        "function_area": "Human Resource",
+        "specialization": "Organisation Development",
+        "skill_name": "Organisation Development"
+      }
+    ],
+    "competencies": [
+      { "name": "Change & Transformation Management", "level": "Advanced" },
+      { "name": "Stakeholder & Partnership Management", "level": "Advanced" },
+      { "name": "Vendor and Contract Management (HR vendors)", "level": "Intermediate" }
+    ],
+    "experiences": [
+      {
+        "type": "HRBP Coverage",
+        "organization": "PSA Singapore",
+        "program": "Operations & Engineering Divisions",
+        "period": { "start": "2021-10-01", "end": null },
+        "focus": "Partnering ~1,200 employees on planning, engagement, and well-being."
+      },
+      {
+        "type": "Coaching",
+        "organization": "PSA Singapore",
+        "program": "Feedback & Recognition Practices",
+        "period": { "start": "2022-01-01", "end": "2024-12-31" },
+        "focus": "Coached mid-level leaders on recognition aligned to PSA values."
+      }
+    ],
+    "positions_history": [
+      {
+        "role_title": "Senior HR Business Partner",
+        "organization": "PSA Singapore",
+        "period": { "start": "2021-10-01", "end": null },
+        "focus_areas": ["Talent management", "Succession planning", "Engagement & well-being"],
+        "key_skills_used": ["Generalist / Business Partner", "Talent Management"]
+      },
+      {
+        "role_title": "HR Business Partner",
+        "organization": "PSA Singapore",
+        "period": { "start": "2016-07-01", "end": "2021-09-30" },
+        "focus_areas": ["Workforce planning", "Employee relations"]
+      }
+    ],
+    "projects": [
+      {
+        "project_name": "Mentorship@PSA (Targeted Mentoring for Multi-generational Workforce)",
+        "role": "Program Lead",
+        "period": { "start": "2022-03-01", "end": "2022-12-31" },
+        "description": "Inclusive mentoring program with digital accessibility and recognition mechanisms.",
+        "outcomes": ["Mentor-mentee match rate 92%", "eNPS +8 points year-on-year"]
+      },
+      {
+        "project_name": "HRIS Upgrade",
+        "role": "Workstream Co-Lead",
+        "period": { "start": "2023-05-01", "end": "2024-01-31" },
+        "description": "Upgraded core HR and learning systems; launched self-service features.",
+        "outcomes": ["HR ticket volume reduced by 35%", "Training completion tracking automated"]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor's Degree, Business (Human Resources)",
+        "institution": "Singapore Management University (SMU)",
+        "period": { "start": "2008-08-01", "end": "2012-04-30" }
+      }
+    ]
+  },
+  {
+    "employee_id": "EMP-20005",
+    "personal_info": {
+      "name": "Felicia Goh",
+      "email": "felicia.goh@globalpsa.com",
+      "office_location": "PSA Singapore",
+      "languages": [
+        { "language": "English", "proficiency": "Fluent" },
+        { "language": "Mandarin", "proficiency": "Conversational" }
+      ]
+    },
+    "employment_info": {
+      "job_title": "Treasury Analyst",
+      "department": "Finance",
+      "unit": "Treasury",
+      "line_manager": "Marcus Lim",
+      "in_role_since": "2024-06-01",
+      "hire_date": "2022-07-01",
+      "last_updated": "2025-10-09"
+    },
+    "skills": [
+      {
+        "function_area": "Finance",
+        "specialization": "Treasury",
+        "skill_name": "Treasury"
+      },
+      {
+        "function_area": "Finance",
+        "specialization": "Risk Management",
+        "skill_name": "Risk Management"
+      },
+      {
+        "function_area": "Finance",
+        "specialization": "Claims and Insurance",
+        "skill_name": "Claims and Insurance"
+      },
+      {
+        "function_area": "Finance",
+        "specialization": "Cost Management and Budget",
+        "skill_name": "Cost Management and Budget"
+      }
+    ],
+    "competencies": [
+      { "name": "Vendor and Contract Management", "level": "Intermediate" },
+      { "name": "Stakeholder & Partnership Management", "level": "Intermediate" }
+    ],
+    "experiences": [
+      {
+        "type": "Treasury Operations",
+        "organization": "PSA Singapore",
+        "program": "Cash & Liquidity",
+        "period": { "start": "2024-06-01", "end": null },
+        "focus": "Daily liquidity monitoring and cash positioning for Singapore entities."
+      },
+      {
+        "type": "Risk Reporting",
+        "organization": "PSA Singapore",
+        "program": "FX Hedging Support",
+        "period": { "start": "2024-06-01", "end": null },
+        "focus": "Prepared exposure reports and supported hedging documentation."
+      }
+    ],
+    "positions_history": [
+      {
+        "role_title": "Treasury Analyst",
+        "organization": "PSA Singapore",
+        "period": { "start": "2024-06-01", "end": null },
+        "focus_areas": ["Liquidity management", "FX risk oversight"]
+      },
+      {
+        "role_title": "Finance Associate",
+        "organization": "PSA Singapore",
+        "period": { "start": "2022-07-01", "end": "2024-05-31" },
+        "focus_areas": ["Accounts payable", "Reporting support"]
+      }
+    ],
+    "projects": [
+      {
+        "project_name": "Treasury Management System Enhancement",
+        "role": "Analyst",
+        "period": { "start": "2024-08-01", "end": "2025-01-31" },
+        "description": "Automated bank statement ingestion and reconciliation rules.",
+        "outcomes": ["Bank reconciliation time reduced by 50%", "Improved visibility of cash positions"]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor's Degree, Banking and Finance",
+        "institution": "Singapore Management University (SMU)",
+        "period": { "start": "2018-08-01", "end": "2022-05-31" }
+      }
+    ]
+  }
+]

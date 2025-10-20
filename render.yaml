@@ -1,0 +1,51 @@
+services:
+  - type: web
+    name: bytesize-backend
+    env: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /healthz
+    autoDeploy: true
+    pythonVersion: 3.11.0
+    envVars:
+      - key: AZURE_OPENAI_CHAT_KEY
+        sync: false
+      - key: AZURE_OPENAI_CHAT_ENDPOINT
+        sync: false
+      - key: AZURE_OPENAI_CHAT_API_VERSION
+        value: 2025-01-01-preview
+      - key: OPENAI_CHAT_MODEL
+        value: gpt-4.1-nano
+      - key: AZURE_OPENAI_EMBED_KEY
+        sync: false
+      - key: AZURE_OPENAI_EMBED_ENDPOINT
+        sync: false
+      - key: AZURE_OPENAI_EMBED_API_VERSION
+        value: 2023-05-15
+      - key: OPENAI_EMBED_MODEL
+        value: text-embedding-3-small
+      - key: CHATBOT_TOP_K
+        value: "3"
+      - key: CHATBOT_CHUNK_SIZE
+        value: "1000"
+      - key: CHATBOT_CHUNK_OVERLAP
+        value: "200"
+
+  - type: web
+    name: bytesize-frontend
+    env: node
+    rootDir: frontend
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start -- --hostname 0.0.0.0 --port $PORT
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: NEXT_PUBLIC_API_BASE_URL
+        fromService:
+          type: web
+          name: bytesize-backend
+          property: url
