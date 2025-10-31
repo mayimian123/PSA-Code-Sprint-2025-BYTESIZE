@@ -1,6 +1,13 @@
+# PSA Code Sprint 2025 - BYTESIZE
+
+🏆 BYTESIZE team at PSA Code Sprint 2025 (17–20 Oct) tackling the “Future-Ready Workforce – AI for Employee Growth and Engagement” track, finishing top 8–15 out of 400+ teams with a Commendation Prize.
+
 # PSA ByteSize Platform
 
 Full-stack workspace combining a FastAPI backend with a Next.js frontend to power PSA's internal talent and engagement experiences.
+
+🌐 **Visit the website:** [https://bytesize-frontend.onrender.com](https://bytesize-frontend.onrender.com)
+
 
 ## Prerequisites
 
